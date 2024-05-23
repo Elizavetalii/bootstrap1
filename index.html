@@ -9,8 +9,8 @@
   </head>
     <body>
         <div class="site-container">
-            <header class="container header">
-                <div class="container">
+            <header class="header">
+                <div class="">
                     <div class="row">
                         <div class ="col-5 text1-horse">Лошадь - друг</div>
                         <div class ="col-2">Первый раздел</div>
@@ -20,62 +20,68 @@
                 </div>
             </header>
 
-            <div class="container">
+            <div class="">
                 <div class="row text-center tx">
                     <div class ="col-12 text2-horse">Что же удалось узнать о лошадях</div>
-                    <div class="col-12 cloner">
-                        <button class ="clonerbtn">клонировать 1</button>
-                        <button class ="clonerbtn">клонировать 2</button>
-                        <button class ="clonerbtn">клонировать 3</button>
+                    <div class="text-center cloner">
+                        <button class ="clonerbtn" onclick="clone1()">клонировать 1</button>
+                        <button class ="clonerbtn" onclick="clone2()">клонировать 2</button>
+                        <button class ="clonerbtn" onclick="clone3()">клонировать 3</button>
                     </div>
                 </div>
             </div>
 
-            <div class="container">
+            <div class="">
                 <div class="row text-center">
-                    <div class ="col-4 imagehorse">
-                        <img width="70" height="70" src ="./image/1horse.png">
-                    </div>
-                    <div class ="col-4 imagehorse">
-                        <img width="70" height="70" src ="./image/2horse.png">
-                    </div>
-                    <div class ="col-4 imagehorse">
-                        <img width="70" height="70" src ="./image/3horse.png">
+                    <div class ="container col-3 imagehorse">
+                        <div class="first" id ="EL1">
+                          <img width="70" height="70" src ="./image/1horse.png">
+                          <div class ="text-center sizenumber">1</div>
+                          <div class ="text-center">Во-первых, оказалось, что все современные домашние лошади произошли от одной группы одомашленных лошадей, т.е находятся в близком родстве друг с другом.</div>
+                        </div>
                     </div>
 
-                    <div class ="col-4 sizenumber">1</div>
-                    <div class ="col-4 sizenumber">2</div>
-                    <div class ="col-4 sizenumber">3</div>
+                    <div class ="container col-3 imagehorse" id ="2">
+                        <div class="second" id="EL2">
+                            <img width="70" height="70" src ="./image/2horse.png">
+                            <div class ="text-center  sizenumber">2</div>
+                            <div class ="text-center ">Во-вторых, в близком родстве с современными домашними лощадьми оказались древние домашние лошади, вымерщие примерно 4200 лет назад, а также дикие лошади из Западной Евразии.</div>
+                        </div>
+                    </div>
 
-                    <div class ="col-4">Во-первых, оказалось, что все современные домашние лошади произошли от одной группы одомашленных лошадей, т.е находятся в близком родстве друг с другом.</div>
-                    <div class ="col-4">Во-вторых, в близком родстве с современными домашними лощадьми оказались древние домашние лошади, вымерщие примерно 4200 лет назад, а также дикие лошади из Западной Евразии.</div>
-                    <div class ="col-4">В-третьих, прояснилось положение лошадей из поселения Ботай, которые до сих пор считались самыми древними представителями домашних лошадей в мире.</div>
+                    <div class ="container col-3 imagehorse" id ="3">
+                        <div class="third" id="EL3">
+                            <img width="70" height="70" src ="./image/3horse.png">
+                            <div class ="text-center  sizenumber">3</div>
+                            <div class ="text-center">В-третьих, прояснилось положение лошадей из поселения Ботай, которые до сих пор считались самыми древними представителями домашних лошадей в мире.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="container">
-                <div class="row text-center ">
-                    <hr  class = "col-12 hrstyle">
-                    <div class ="col-12 text2-horse">Происхождение современных домашних лошадей</div>
+            <div class="">
+                <div class="row text-center">
+                    <hr class="container col-10 hrstyle">
+                    <div class="col-12 text2-horse">Происхождение современных домашних лошадей</div>
                     <div class="row align-items-center">
-                        <div class="col-6">
-                            <img  src ="./image/4horse.png">
-                            <img  src ="./image/5horse.png">
-                        </div>
-                        <div class="col-md-6">
-                            <button class="add">Добавить</button>
-                            <button class="delete">Убрать</button>
-                        </div>
-                        <hr class = "col-12 hrstyle">
+                            <div class="col-6 horses">
+                                <img id="one" src="./image/4horse.png">
+                                <img id="two" src="./image/5horse.png">
+                            </div>
+                            <div class="col-md-6">
+                                <button id="add" class="add" onclick="addhorse()">Добавить</button>
+                                <button id="delete" class="delete" onclick="deletehorse()">Убрать</button>
+                            </div>
+                        <hr class="container col-10 hrstyle">
                     </div>
                 </div>
             </div>
 
-            <div class="container">
+            <div class="">
                 <div class="row text-center">
                     <div class ="col-12 text2-horse">Авторы статьи утверждают</div>
                     <div class="row align-items-center">
-                    <div class="col-12 lastStyle">Авторы статьи утверждают, что настоящей родиной всех современных домашних лошадей являются низовья Дона и Волги район вокруг современной Астраханской области и западного Казахстана. Биоинформатик, исследователь компании MicroGen Biotech Дмитрий Равчеев объяснил, как именно ученые пришли к таким выводам, а также выяснили, кем являются для современных лошадей вымершие европейские тарпаны и чудом сохранившиеся лошади Пржевальского.</div>
+                    <div class="container col-10 lastStyle">Авторы статьи утверждают, что настоящей родиной всех современных домашних лошадей являются низовья Дона и Волги район вокруг современной Астраханской области и западного Казахстана. Биоинформатик, исследователь компании MicroGen Biotech Дмитрий Равчеев объяснил, как именно ученые пришли к таким выводам, а также выяснили, кем являются для современных лошадей вымершие европейские тарпаны и чудом сохранившиеся лошади Пржевальского.</div>
                         <div class="row">
                             <div class="col-3"  class="img-fluid" style="margin-left: -18%;">
                                 <img src ="./image/forest.png">
@@ -97,6 +103,7 @@
                 </div>
             </div>
         </div>
+    <script src ="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

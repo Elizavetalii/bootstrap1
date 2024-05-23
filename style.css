@@ -7,9 +7,7 @@
 
 .site-container{
     overflow: hidden;
-    /* width: 1903px !important; */
     background-color: #fbf5ee;
-    /* border: 1px solid #000; */
 }
 
 .header {
@@ -21,7 +19,7 @@
 
 .text1-horse{
     margin-left: 5%;
-    font-size: 126%;
+    font-size: 170%;
     font-weight: 500;
 }
 
@@ -46,12 +44,11 @@
 .clonerbtn{
     background-color: #ffff54;
     font-weight: 400;
-    height: 35px;
     text-align: center;
 }
 
 .clonerbtn:hover{
-    background-color: #ffcc00;
+    background-color: #ddd903;
 }
 
 .imagehorse{
@@ -61,14 +58,22 @@
 .add{
     background-color: #75fb4c;
     font-weight: 500;
-    height: 60px;
+    height: 80px;
+}
+
+.add:hover{
+    background-color: #1bce00;
 }
 
 
 .delete{
     background-color: #ea3323;
     font-weight: 500;
-    height: 60px;
+    height: 80px;
+}
+
+.delete:hover{
+    background-color: #ca1100;
 }
 
 .stylegreen{
